@@ -13,31 +13,31 @@ Mac OS X mojave
 
 ## How To Init
 先搭建最基本的框架，打开Facebook的create-react-app的Github网页[create-react-app](https://github.com/facebook/create-react-app)
-根据教程开始（如下)
-(```)
-    $ npx create-react-app my-app
-    $ cd my-app
-(```)
+根据教程开始（如下)  
+
+    '$ npx create-react-app my-app'  
+    '$ cd my-app'
+
 这时候想直接看效果的话直接输入
 `$ npm start`
 **mp-app**就是一个默认的react框架，但里面并没有详细的webpack.config，需要运行不可逆命令
 `$ npm run eject`
 
 ## File Introduction
-项目的所有文件裸露出来，出现了想要的**config**和**public**文件夹
-在webpack.config.js中565行左右有服务器链接首页的设置*index.html*
-*index.html*在**public**文件夹中
-**src**中，index.js是最顶层文件，直接作用于index.html
+项目的所有文件裸露出来，出现了想要的**config**和**public**文件夹  
+在webpack.config.js中565行左右有服务器链接首页的设置*index.html*  
+*index.html*在**public**文件夹中  
+**src**中，index.js是最顶层文件，直接作用于index.html  
 
 ## Install Redux
-You can make a shell file to do the following things.Just like *react-redux.sh*
+You can make a shell file to do the following things.Just like *react-redux.sh*  
 (```)
-    $ npm install --save redux
-    $ npm install --save react-redux
-    $ npm install --save redux-logger
-    $ npm install --save redux-thunk
-    $ npm install --save react-router-dom
-(```)
+    $ npm install --save redux  
+    $ npm install --save react-redux  
+    $ npm install --save redux-logger  
+    $ npm install --save redux-thunk  
+    $ npm install --save react-router-dom  
+(```)  
 1. react-redux For { Provider, connect}
 2. redux-thunk For { thunkMiddleware }
 
@@ -45,7 +45,7 @@ You can make a shell file to do the following things.Just like *react-redux.sh*
 ![Redux](./pictures/react-3.jpg "redux")
 
 ## How to connect Redux and React
-![react-redux](./pictures/react-4.jpg "react-redux")
+![react-redux](./pictures/react-4.jpg "react-redux")  
 Pay attention to the most important things:
 1. **Provider** and **connect**
 2. **state** and **props**
