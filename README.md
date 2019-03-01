@@ -18,9 +18,9 @@ Mac OS X mojave
     '$ npx create-react-app my-app'  
     '$ cd my-app'
 
-这时候想直接看效果的话直接输入  
+这时候想直接看效果的话直接输入
 `$ npm start`  
-**mp-app**就是一个默认的react框架，但里面并没有详细的webpack.config，需要运行不可逆命令  
+**mp-app**就是一个默认的react框架，但里面并没有详细的webpack.config，需要运行不可逆命令
 `$ npm run eject`  
 
 ## File Introduction
@@ -30,14 +30,14 @@ Mac OS X mojave
 **src**中，index.js是最顶层文件，直接作用于index.html  
 
 ## Install Redux
-You can make a shell file to do the following things.Just like *react-redux.sh*  
-(```)
-    $ npm install --save redux  
-    $ npm install --save react-redux  
-    $ npm install --save redux-logger  
-    $ npm install --save redux-thunk  
-    $ npm install --save react-router-dom  
-(```)  
+You can make a shell file to do the following things.Just like *react-redux.sh*    
+
+    `$ npm install --save redux`     
+    `$ npm install --save react-redux`  
+    `$ npm install --save redux-logger`    
+    `$ npm install --save redux-thunk`    
+    `$ npm install --save react-router-dom`    
+
 1. react-redux For { Provider, connect}
 2. redux-thunk For { thunkMiddleware }
 
