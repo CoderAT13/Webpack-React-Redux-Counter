@@ -1,8 +1,4 @@
 # Webpack + React + Redux 样例教程
-(```)
-what the fuck?
-excuse me?
-(```)
 ## Author
 CoderAt
 ## Date
@@ -63,5 +59,5 @@ Pay attention to the most important things:
 5. How reducer get the prestate and action?
 
 ## Reference
-[React 实践心得：react-redux 之 connect 方法详解](https://yq.aliyun.com/articles/59428)
-[Redux中文文档](http://cn.redux.js.org/index.html)
+1. [React 实践心得：react-redux 之 connect 方法详解](https://yq.aliyun.com/articles/59428)  
+2. [Redux中文文档](http://cn.redux.js.org/index.html)
