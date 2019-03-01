@@ -18,10 +18,10 @@ Mac OS X mojave
     '$ npx create-react-app my-app'  
     '$ cd my-app'
 
-这时候想直接看效果的话直接输入
-`$ npm start`
-**mp-app**就是一个默认的react框架，但里面并没有详细的webpack.config，需要运行不可逆命令
-`$ npm run eject`
+这时候想直接看效果的话直接输入  
+`$ npm start`  
+**mp-app**就是一个默认的react框架，但里面并没有详细的webpack.config，需要运行不可逆命令  
+`$ npm run eject`  
 
 ## File Introduction
 项目的所有文件裸露出来，出现了想要的**config**和**public**文件夹  
