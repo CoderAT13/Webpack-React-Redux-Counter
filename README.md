@@ -1,68 +1,63 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Webpack + React + Redux 样例教程
+## Author
+CoderAt
+## Date
+2019.3.1
+## Environment
+Mac OS X mojave
+## Target
+看懂一份[Example](https://github.com/cornflourblue/react-redux-registration-login-example)代码
 
-## Available Scripts
+## Introduction
+这是一篇踩了无数坑而来的最简版counters的Webpack + React + Redux教程,用最简单的计数器counter为例子,从零开始边搭建边学习。
 
-In the project directory, you can run:
+## How To Init
+先搭建最基本的框架，打开Facebook的create-react-app的Github网页[create-react-app](https://github.com/facebook/create-react-app)
+根据教程开始（如下)
+(```)
+    $ npx create-react-app my-app
+    $ cd my-app
+(```)
+这时候想直接看效果的话直接输入
+`$ npm start`
+**mp-app**就是一个默认的react框架，但里面并没有详细的webpack.config，需要运行不可逆命令
+`$ npm run eject`
 
-### `npm start`
+## File Introduction
+项目的所有文件裸露出来，出现了想要的**config**和**public**文件夹
+在webpack.config.js中565行左右有服务器链接首页的设置*index.html*
+*index.html*在**public**文件夹中
+**src**中，index.js是最顶层文件，直接作用于index.html
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Install Redux
+You can make a shell file to do the following things.Just like *react-redux.sh*
+(```)
+    $ npm install --save redux
+    $ npm install --save react-redux
+    $ npm install --save redux-logger
+    $ npm install --save redux-thunk
+    $ npm install --save react-router-dom
+(```)
+1. react-redux For { Provider, connect}
+2. redux-thunk For { thunkMiddleware }
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## First to know how Redux works
+![Redux](./pictures/react-3.jpg "redux")
 
-### `npm test`
+## How to connect Redux and React
+![react-redux](./pictures/react-4.jpg "react-redux")
+Pay attention to the most important things:
+1. **Provider** and **connect**
+2. **state** and **props**
+3. **action** 、**method** and **dispatch**
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Ever Trapped
+1. Where is the react's webpack config?
+2. What's the logical relationship of store、reduce、action、state、props、dispatch？
+3. How to get state's data from the store?
+4. How store subscribe the dispatch(action)?
+5. How reducer get the prestate and action?
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Reference
+[React 实践心得：react-redux 之 connect 方法详解](https://yq.aliyun.com/articles/59428)
+[Redux中文文档](http://cn.redux.js.org/index.html)
